@@ -1,54 +1,54 @@
-{% if site.layout == 'stacked' %}
-  {% assign metadata_styles = 'd-md-inline-block mx-3 mb-1 mb-md-0' %}
-{% else %}
-  {% assign metadata_styles = 'd-flex flex-items-center mb-3' %}
-{% endif %}
+<!style="border: solid black 5px">
+<header class="site-header" style="background-color: coral; border: solid black 5px;">
+  <div class="wrap" style="background-color: coral; ">
+    <div class="title-area" style="background-color: coral; border: solid blue 3px;">
+      <p class="site-title" style="background-color: coral;">
+        <img src="{{ user.avatar_url }}" class="circle mb-3" style="max-width: 100px; margin-left: 5px; margin-top: 20px">
+      </p>
+    </div>
+    <h2 class="screen-reader-text"  style="background-color: coral;  border: solid yellow 3px;">Main navigation</h2>
+    <nav class="nav-primary" id="genesis-nav-primary" aria-label="Main navigation" style="background-color: coral;  border: solid pink 3px;" >
 
-<img src="{{ user.avatar_url }}" class="circle mb-3" style="max-width: 150px;">
-<h1 class="{% if site.style == 'dark' %}text-white{% endif %} mb-2 lh-condensed">{% if user.name %}{{ user.name }}{% else %}{{ user.login }}{% endif %}</h1>
-<p class="mb-3 f4 {% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}">
-  {{ user.bio }}
-</p>
+      <ul id="menu-top-menu" class="menu genesis-nav-menu" style="background-color: coral; border: solid purple 3px;">
 
-{% if include.metadata %}
-  <div class="f4 mb-6">
-    {% if user.name %}
-      <div class="{{ metadata_styles }}">
-        {% octicon mark-github height:20 class:"mr-2 v-align-middle" fill:{{ icon_color }} aria-label:GitHub %}
-        <a href="https://github.com/{{ user.login }}" {% if site.style == 'dark' %}class="text-white"{% endif %}>
-          @{{ user.login }}
-        </a>
-      </div>
-    {% endif %}
-    {% if user.email %}
-      <div class="{{ metadata_styles }}">
-        {% octicon mail height:20 class:"mr-2 v-align-middle" fill:{{ icon_color }} aria-label:email %}
-        <a href="mailto:{{ user.email }}" {% if site.style == 'dark' %}class="text-white"{% endif %}>
-          {{ user.email }}
-        </a>
-      </div>
-    {% endif %}
-    {% if user.location %}
-      <div class="{{ metadata_styles }} {% if site.style == 'dark' %}text-white{% endif %}">
-        {% octicon location height:20 class:"mr-2 v-align-middle" fill:{{ icon_color }} aria-label:Location %}
-        {{ user.location }}
-      </div>
-    {% endif %}
-    {% if site.social_media %}
-      <div class="d-flex flex-wrap flex-items-start {% if site.layout == 'stacked' %}flex-justify-center mt-1 mt-md-3{% endif %}">
-        {% for account in site.social_media %}
-          <div class="{% unless forloop.last == true %}mr-3{% endunless %} mb-3">
-            {% assign service_shortname = account[0] %}
-            {% assign service = site.data.social_media[service_shortname] %}
-            <a href="{{ service.profile_url_prefix }}{{ account[1] }}" class="tooltipped tooltipped-se" aria-label="{{ service.name }}: {{ account[1] }}">
-              {{ service.icon_svg }}<span class="d-none">{{ service.name }}</span>
-            </a>
-          </div>
-        {% endfor %}
-      </div>
-    {% endif %}
-    {% if user.hireable %}
-      <span title="Hire me" class="d-inline-block f5 rounded-2 text-white bg-green py-1 px-2">Available for hire</span>
-    {% endif %}
-  </div>
-{% endif %}
+        <li id="menu-item-4" class="left menu-item menu-item-type-taxonomy menu-item-object-category">
+        <a href="/mejor-hosting-comparativa/">
+          <span>Comparativa de Hostings</span>
+        </a></li>
+
+        <li id="menu-item-1" class="left menu-item menu-item-type-taxonomy menu-item-object-category">
+          <a href="https://www.hazunaweb.com/curso-de-html/">
+            <span>Curso de HTML</span>
+          </a></li>
+        <li id="menu-item-2" class="left menu-item menu-item-type-taxonomy menu-item-object-category">
+          <a href="https://www.hazunaweb.com/curso-de-css/">
+            <span>Curso de CSS</span>
+          </a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+
+
+
+
+
+
+
+
+<div id="miCabecera"  style="background-color:#4285F4; border: solid black 1px;">
+<table style="border: solid yellow 1px;">
+  <tr>
+    <td style="order: solid yellow 1px;"><h1>Emilio Sánchez</h1></td>
+    <td style="border: solid yellow 1px; padding-botton=100px;"><img src="{{ user.avatar_url }}" class="circle mb-3" style="max-width: 100px; margin-left: 5px; margin-top: 20px"></td>
+  </tr>
+</table>
+
+</div>
+
+<div id="miBarraNav" style="background-color:#4285F4;">
+<h3 style="text-align:center; color: white;"> INICIO | LINK1  | LINK2 | LINK3 </h3>
+
+</div>

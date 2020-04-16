@@ -1,14 +1,17 @@
 {% include header.html %}
 
 {% if site.layout == 'stacked' %}
-  <div class="container-lg py-6 p-responsive text-center">
+
     {% include masthead.html metadata=true %}
+
+  <div class="container-lg py-6 p-responsive text-center" style="background-color: green;">
+
 
     <div {% if site.style == 'dark' %}class="text-white"{% endif %}>
       {{ content }}
     </div>
 
-    <div class="my-6">
+    <div class="my-6"  style="background-color= yellow;">
       {% include projects.html %}
     </div>
 
