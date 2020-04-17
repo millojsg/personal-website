@@ -1393,7 +1393,7 @@ img.stretch {
 }
 
 .genesis-nav-menu a {
-	border: none;
+	//border: none;
 	display: block;
 	margin: 0 16px 0;
 	position: relative;
@@ -1439,7 +1439,7 @@ img.stretch {
 		height: 0;
 		border-left: 5px solid transparent;
 		border-right: 5px solid transparent;
-		border-bottom: 1px solid blue
+	//	border-bottom: 1px solid
 	}
 	.genesis-nav-menu .menu-item:hover>.sub-menu {
 		margin-top: 0;
@@ -1563,7 +1563,7 @@ img.stretch {
 	}
 	.bg-primary .nav-primary {
 		padding-bottom: 22px;
-		border-bottom: 50px solid rgba(255, 255, 255, .3)
+		//border-bottom: 1px solid rgba(255, 255, 255, .3)
 	}
 	.nav-primary .genesis-nav-menu>li>a {
 		margin: 0 0 0 24px;
@@ -1639,7 +1639,7 @@ img.stretch {
 
 .nav-secondary .genesis-nav-menu li.current-menu-item a:after {
 	content: " ";
-	border-bottom: 5px solid #333;
+//border-bottom: 5px solid #333;
 	width: 100%;
 	position: absolute;
 	bottom: 0;
