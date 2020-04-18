@@ -4,14 +4,22 @@
 
     {% include masthead.html metadata=true %}
 
-  <div class="container-lg py-6 p-responsive text-center wrap" style="background-color:green;">
+  <div class="container-lg py-6 p-responsive text-center wrap" style="//background-color:green;">
 
 
     <div {% if site.style == 'dark' %}class="text-white"{% endif %}>
       {{ content }}
     </div>
 
-    <div class="my-6"  style="background-color= yellow;">
+    <div style="margin-top: -40px; //padding-top: 0px ">
+          {% include galeria.html %}
+    </div>
+
+
+
+
+
+    <div class="my-6" >
       {% include projects.html %}
     </div>
 

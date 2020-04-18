@@ -3,6 +3,168 @@
 @import url('https://unpkg.com/primer/build/build.css');
 @import 'highlight-syntax';
 
+//Esta es mi propia configuracion de slider gallery
+
+#slider {
+	overflow: hidden;
+}
+#slider figure {
+	position: relative;
+	width: 500%;
+	margin: 0;
+	left: 0;
+	animation: 20s slider infinite;
+}
+#slider figure img {
+	width: 20%;
+	float: left;
+}
+
+@keyframes slider {
+	0% {
+		left: 0;
+	}
+	20% {
+		left: 0;
+	}
+	25% {
+		left: -100%;
+	}
+	45% {
+		left: -100%;
+	}
+	50% {
+		left: -200%;
+	}
+	70% {
+		left: -200%;
+	}
+	75% {
+		left: -300%;
+	}
+	95% {
+		left: -300%;
+	}
+	100% {
+		left: -400%;
+	}
+}
+
+//Esta es la configuracion del footer
+#ft {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+    line-height: 1.6em;
+    background: #444;
+    background: #333;
+    background: -moz-linear-gradient(top, #485054 0, #333738 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #485054), color-stop(100%, #333738));
+    background: -webkit-linear-gradient(top, #485054 0, #404547 100%);
+    background: -o-linear-gradient(top, #485054 0, #333738 100%);
+    background: -ms-linear-gradient(top, #485054 0, #333738 100%);
+    background: linear-gradient(to bottom, #485054 0, #333738 100%);
+    //filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#485054', endColorstr='#333738', GradientType=1);
+    -moz-box-shadow: inset 0 20px 20px -20px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: inset 0 20px 20px -20px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 30px 30px -30px rgba(0, 0, 0, 0.5)
+}
+
+#ftln {
+    position: relative;
+    top: 3em;
+    height: 2em;
+    background: rgba(255, 255, 255, 0.05)
+}
+
+#ftc {
+    padding: 4em 20%
+}
+
+#ft h1,
+#ft h2 {
+    text-align: left;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: .02em;
+    color: #daeaf2;
+    line-height: 1.2em;
+    margin: .5em 0;
+    padding: 0;
+    background: transparent;
+    border: 0;
+    position: static;
+    display: block;
+    -moz-box-shadow: 0 0 0 transparent;
+    -webkit-box-shadow: 0 0 0 transparent;
+    box-shadow: 0 0 0 transparent
+}
+
+#ft h1 {
+    font-size: 1.2em;
+    text-shadow: none
+}
+
+#ft h2 {
+    font-size: 1em;
+    text-shadow: none
+}
+
+#ft ul {
+    margin: 0;
+    padding-left: 2em;
+    list-style-type: none
+}
+
+#ft li {
+    margin: 0;
+    padding: 0
+}
+
+
+#ft a:hover {
+    display: block;
+    color: yellow;
+    text-decoration: none
+}
+
+#ft a span {
+    position: relative;
+    left: 0;
+    filter: alpha(opacity=60);
+    -moz-opacity: .6;
+    -khtml-opacity: .6;
+    opacity: .6
+}
+
+#ft abbr {
+    border-bottom: 1px dotted #78868c
+}
+
+#ftc1 {
+    width: 30%;
+    float: left
+}
+
+#ftc2 {
+    width: 30%;
+    margin: 0 5%;
+    float: left
+}
+
+#ftc3 {
+    width: 30%;
+    float: left
+}
+
+#ftb {
+    clear: both
+}
+
+
+
+
+
+
 
 // If a user adds a custom font, this component will stop it from bleeding into GitHub components:
 .github-component {
@@ -1010,7 +1172,7 @@ img.stretch {
 
 .wrap {
 	margin: 0 auto;
-	padding: 0 
+	padding: 0
 }
 
 .site-inner {
@@ -1367,7 +1529,7 @@ img.stretch {
 
 @media only screen and (min-width:800px) {
 	.site-header {
-		padding: 3px 0px 2px 0px  //Controla el contenedor de cabecera
+		padding: 0px 0px 0px 0px  //Controla el contenedor de cabecera
 	}
 	.site-header .wrap {
 	//	max-width: none

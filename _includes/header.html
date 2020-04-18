@@ -29,5 +29,52 @@
     <meta property="og:description" content="{{ meta_description }}" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="{{ "/assets/styles.css" | relative_url }}" rel="stylesheet" type="text/css">
+
+<script type="text/javascript">
+  $("#ft a").each(function() {
+      var d = 0.6,
+          c = 200,
+          b = $(this),
+          a = $(this).children().first();
+      b.mouseenter(function() {
+          if (!$.support.transition) {
+              a.stop().animate({
+                  opacity: 1,
+                  left: 15
+              }, c, "easeOutQuart")
+          } else {
+              a.stop().transition({
+                  opacity: 1,
+                  left: 15
+              }, c, "easeOutQuart")
+          }
+      }).mouseleave(function() {
+          if (!$.support.transition) {
+              a.stop().animate({
+                  opacity: d,
+                  left: 0
+              }, c, "easeOutQuart")
+          } else {
+              a.stop().transition({
+                  opacity: d,
+                  left: 0
+              }, c, "easeOutQuart")
+          }
+      })
+  })
+});
+</script>
+<script>
+window.setInterval (BlinkIt, 500);
+var color = "red";
+function BlinkIt () {
+var blink = document.getElementById ("blink");
+color = (color == "#ffffff")? "red" : "#ffffff";
+blink.style.color = color;
+blink.style.fontSize='36px';}
+</script>
+
+
+
   </head>
   <body class="bg-white min-height-full" {% if site.style == 'dark' %}style="background-color: #2f363d !important"{% endif %}>
