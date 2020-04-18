@@ -4,7 +4,7 @@
 
     {% include masthead.html metadata=true %}
 
-  <div class="container-lg py-6 p-responsive text-center" style="background-color: green;">
+  <div class="container-lg py-6 p-responsive text-center wrap" style="background-color:green;">
 
 
     <div {% if site.style == 'dark' %}class="text-white"{% endif %}>
@@ -27,6 +27,8 @@
       </div>
     {% endunless %}
   </div>
+
+
 {% else %}
   <div class="d-md-flex min-height-full {% unless site.style == 'dark' %}border-md-bottom{% endunless %}">
     <div class="flex-self-stretch {% if site.style == 'dark' %}bg-gray-dark{% else %}border-md-right border-gray-light bg-white{% endif %} col-md-5 col-lg-4 col-xl-3 px-4 px-md-6 px-lg-7 py-6">
