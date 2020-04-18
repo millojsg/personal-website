@@ -553,7 +553,7 @@ textarea:focus,
 .button:before,
 .genesis-nav-menu a,
 .team-grid .overlay {
-	-webkit-transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
 	-moz-transition: all .2s ease-in-out;
 	-ms-transition: all .2s ease-in-out;
 	-o-transition: all .2s ease-in-out;
@@ -876,8 +876,8 @@ th {
 .screen-reader-text:focus,
 .widget_search input[type=submit]:focus {
 	border: 1px solid #5b5e5e;
-	clip: auto !important;
-	display: block;
+	//clip: auto !important;
+	//display: block;
 	font-size: 18px;
 	font-size: 1.8rem;
 	font-weight: 700;
@@ -1313,7 +1313,7 @@ img.stretch {
 .site-header {
 	width: 100%;
 	z-index: 999;
-	padding: 20px 0;
+	padding: 10px 0;
 	background: #52c0cb;
 	position: relative
 }
@@ -1340,7 +1340,7 @@ img.stretch {
 }
 
 .header-image .nav-primary:not(button) {
-	margin-top: 22px
+	margin-top: 10px
 }
 
 .header-image .site-title {
@@ -1367,7 +1367,7 @@ img.stretch {
 
 @media only screen and (min-width:800px) {
 	.site-header {
-		padding: 30px 0 25px
+		padding: 3px 0px 2px 0px  //Controla el contenedor de cabecera
 	}
 	.site-header .wrap {
 		max-width: none
@@ -1387,41 +1387,43 @@ img.stretch {
 }
 
 .genesis-nav-menu li {
+  margin-top: 25px;
 	display: inline-block;
-	list-style: none;
-	position: relative
+	list-style: initial;
+	position: relative;
+	border:none
 }
 
 .genesis-nav-menu a {
-	//border: none;
-	display: block;
+	//display: block;
 	margin: 0 16px 0;
 	position: relative;
-	color: #fff;
+	color: #afbdd4;
 	opacity: .7
 }
-
+.genesis-nav-menu li:hover,
 .genesis-nav-menu li a:hover,
 .genesis-nav-menu .menu-item a:hover,
 .genesis-nav-menu .current-menu-item>a,
 .genesis-nav-menu .sub-menu .current-menu-item>a:hover {
 	text-decoration: none;
-	opacity: 1
+	opacity: 1;
+   background-color: #d8dfea // Al seleccionar fondo
 }
 
 @media only screen and (min-width:800px) {
 	.genesis-nav-menu .menu-item.highlight a {
-		background: 0 0;
-		border: 1px solid #fff;
+		background: #afbdd4;
+	//	border: 1px solid #fff;
 		border-radius: 3px;
-		color: #fff;
+		color: #afbdd4;
 		line-height: 1;
 		padding: 10px 20px 8px
 	}
 	.genesis-nav-menu .sub-menu {
 		width: 180px;
 		z-index: 99;
-		background: #fff;
+		background: #afbdd4;
 		box-shadow: 0 5px 10px -5px rgba(0, 0, 0, .2);
 		border-radius: 3px;
 		opacity: 0;
@@ -1453,7 +1455,7 @@ img.stretch {
 		border-top: none;
 		padding: 8px 16px;
 		margin: 0;
-		color: #333;
+		color: #afbdd4;
 		width: 100%
 	}
 	.genesis-nav-menu .sub-menu li {
@@ -1541,10 +1543,10 @@ img.stretch {
 		width: 100%
 	}
 	.nav-primary .genesis-nav-menu>li:first-child {
-		margin-top: 20px
+		margin-top:  10px
 	}
 	.nav-primary .genesis-nav-menu li .sub-menu {
-		margin: 0 0 0 24px;
+		margin: 0 0 0 10px;
 		width: calc(100% - 24px)
 	}
 	.nav-primary .genesis-nav-menu a {
@@ -1566,7 +1568,7 @@ img.stretch {
 		//border-bottom: 1px solid rgba(255, 255, 255, .3)
 	}
 	.nav-primary .genesis-nav-menu>li>a {
-		margin: 0 0 0 24px;
+		margin: 0 0 0 10px;
 		padding: 15px 0
 	}
 	.nav-primary .genesis-nav-menu>li.left {
@@ -1686,8 +1688,8 @@ img.stretch {
 
 @media only screen and (min-width:800px) {
 	.white-header .genesis-nav-menu .menu-item.highlight a {
-		border: 1px solid #333;
-		color: #333
+		border: 1px solid #afbdd4;
+		color: #afbdd4
 	}
 }
 
@@ -1722,8 +1724,8 @@ img.stretch {
 
 .pagination li a:hover,
 .pagination li.active a {
-	background: #52c0cb;
-	color: #fff;
+	background: #afbdd4;
+	color: #afbdd4;
 	border-bottom: 0
 }
 
@@ -3040,7 +3042,7 @@ section.wp-block-cover-image h2 a,
 section.wp-block-cover-image h2 a:active,
 section.wp-block-cover-image h2 a:focus,
 section.wp-block-cover-image h2 a:hover {
-	color: #fff
+	color: #afbdd4
 }
 
 .wp-block-cover-image .wp-block-cover.has-left-content {
@@ -3189,7 +3191,7 @@ section.wp-block-cover-image>h2 {
 .wp-block-file a.wp-block-file__button:hover,
 .wp-block-file a.wp-block-file__button:visited {
 	box-shadow: none;
-	color: #fff;
+	color: #afbdd4;
 	opacity: .85;
 	text-decoration: none
 }
@@ -4760,8 +4762,8 @@ span.wpcf7-not-valid-tip {
 }
 
 .cli-plugin-button:hover {
-	background-color: #111;
-	color: #fff;
+	background-color: #afbdd4;
+	color: #afbdd4;
 	text-decoration: none
 }
 
