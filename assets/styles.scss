@@ -14,11 +14,11 @@ $$ \__$$ |$$ |_____ $$ |$$$$ |$$ |_____ $$ |  $$ |$$ |  $$ |$$ |_____ $$ |_____ 
 $$    $$/ $$       |$$ | $$$ |$$       |$$ |  $$ |$$ |  $$ |$$       |$$       |$$    $$/
 $$$$$$/  $$$$$$$$/ $$/   $$/ $$$$$$$$/ $$/   $$/ $$/   $$/ $$$$$$$$/ $$$$$$$$/  $$$$$$/
 ****************************************************************************************/
-
+/*
 * {
   box-sizing: border-box;
 }
-
+*/
 
 .wrap:before {
 	content: " ";
@@ -40,10 +40,8 @@ $$$$$$/  $$$$$$$$/ $$/   $$/ $$$$$$$$/ $$/   $$/ $$/   $$/ $$$$$$$$/ $$$$$$$$/  
 	margin: 0 auto;
 	padding: 0;
 	max-width: 1280px;
+  //border: 10px solid yellow;
 }
-
-
-
 
 .sticky {
   position: sticky;
@@ -51,7 +49,6 @@ $$$$$$/  $$$$$$$$/ $$/   $$/ $$$$$$$$/ $$/   $$/ $$/   $$/ $$$$$$$$/ $$$$$$$$/  
   width: 100%;
 	z-index:20;
 }
-
 
 /********************************************************************
  ______    ______   __        ________  _______   ______   ______
@@ -139,11 +136,6 @@ $$/       $$$$$$/   $$$$$$/     $$/    $$$$$$$$/ $$/   $$/
     background: rgba(255, 255, 255, 0.05)
 }
 
-#ftc {
-    padding-top: 4em;
-		padding-bottom:4em;
-}
-
 #ft h1,
 #ft h2 {
     text-align: left;
@@ -153,74 +145,55 @@ $$/       $$$$$$/   $$$$$$/     $$/    $$$$$$$$/ $$/   $$/
     color: #daeaf2;
     line-height: 1.2em;
     margin: .5em 0;
+
     padding: 0;
-    background: transparent;
-    border: 0;
-    position: static;
-    display: block;
-    -moz-box-shadow: 0 0 0 transparent;
-    -webkit-box-shadow: 0 0 0 transparent;
-    box-shadow: 0 0 0 transparent
-}
-
-#ft h1 {
-    font-size: 1.2em;
-    text-shadow: none
-}
-
-#ft h2 {
-    font-size: 1em;
-    text-shadow: none
+background: transparent;
+border: 0;
+position: static;
+display: block;
+-moz-box-shadow: 0 0 0 transparent;
+-webkit-box-shadow: 0 0 0 transparent;
+box-shadow: 0 0 0 transparent
 }
 
 #ft ul {
-    margin: 0;
     list-style-type: none
 }
 
-#ft li {
-    margin: 0;
-    padding: 0
-}
-
-
 #ft a:hover {
-    display: block;
     color: yellow;
     text-decoration: none
-}
-
-#ft a span {
-    position: relative;
-    left: 0;
-    filter: alpha(opacity=60);
-    -moz-opacity: .6;
-    -khtml-opacity: .6;
-    opacity: .6
 }
 
 #ft abbr {
     border-bottom: 1px dotted #78868c
 }
 
+#ftc{
+  margin: 0 auto;
+	max-width: 1280px;
+  overflow: auto;
+}
+
+#fcontenedor{
+  //border: 15px solid yellow;
+  margin: 5% auto;
+  width: 60%;
+  overflow: auto;
+}
+
 #ftc1 {
-		position: relative;
-    left: 0%;
 		float: left;
+    padding: 0px 30px 0px 5px;
 }
 
 #ftc2 {
-	position: relative;
-	left: 28%;
-	float: left;
+  float: left;
+  padding: 0px 30px 0px 30px;
+
 }
 
 #ftc3 {
-	position: relative;
-	left: 55%;
-	float: left;
-}
-
-#ftb {
-    clear: both
+  float: left;
+  padding: 0px 5px 0px 30px;
 }
