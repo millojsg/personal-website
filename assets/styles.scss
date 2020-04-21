@@ -141,19 +141,11 @@ $$/       $$$$$$/   $$$$$$/     $$/    $$$$$$$$/ $$/   $$/
     text-align: left;
     text-transform: uppercase;
     font-family: 'Oswald', sans-serif;
+    font-size: 16px;
     letter-spacing: .02em;
     color: #daeaf2;
     line-height: 1.2em;
     margin: .5em 0;
-
-    padding: 0;
-background: transparent;
-border: 0;
-position: static;
-display: block;
--moz-box-shadow: 0 0 0 transparent;
--webkit-box-shadow: 0 0 0 transparent;
-box-shadow: 0 0 0 transparent
 }
 
 #ft ul {
@@ -178,22 +170,22 @@ box-shadow: 0 0 0 transparent
 #fcontenedor{
   //border: 15px solid yellow;
   margin: 5% auto;
-  width: 60%;
+  width: 70%;
   overflow: auto;
 }
 
 #ftc1 {
 		float: left;
-    padding: 0px 30px 0px 5px;
+    margin: 50px;
 }
 
 #ftc2 {
   float: left;
-  padding: 0px 30px 0px 30px;
+  margin: 50px;
 
 }
 
 #ftc3 {
   float: left;
-  padding: 0px 5px 0px 30px;
+  margin: 50px;
 }
