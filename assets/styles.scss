@@ -146,10 +146,15 @@ $$/       $$$$$$/   $$$$$$/     $$/    $$$$$$$$/ $$/   $$/
 }
 
 #ft ul {
-    list-style-type: none
+	list-style-type: none
+}
+#ft li{
+	color: rgb(102, 78, 236);
+	font-size: 16px;
 }
 
-#ft a:hover {
+#ft a:hover,
+#ft li:hover {
     color: yellow;
     text-decoration: none
 }
@@ -188,6 +193,7 @@ $$/       $$$$$$/   $$$$$$/     $$/    $$$$$$$$/ $$/   $$/
 	overflow: visible;
 	display: inline-block;
 	vertical-align: top; /*para que se alineen por el tope*/
+	visibility: hidden;
 }
 
 #ftc2 {
@@ -200,6 +206,7 @@ $$/       $$$$$$/   $$$$$$/     $$/    $$$$$$$$/ $$/   $$/
 	overflow: visible;
 	display: inline-block;
 	vertical-align: top; /*para que se alineen por el tope*/
+	visibility: hidden;
 }
 
 #ftc3 {
