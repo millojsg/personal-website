@@ -131,7 +131,7 @@ $$/       $$$$$$/   $$$$$$/     $$/    $$$$$$$$/ $$/   $$/
 
 #ftln {
     position: relative;
-    top: 3em;
+    top: 2em;
     height: 2em;
     background: rgba(255, 255, 255, 0.05)
 }
@@ -141,7 +141,7 @@ $$/       $$$$$$/   $$$$$$/     $$/    $$$$$$$$/ $$/   $$/
     text-align: left;
     text-transform: uppercase;
     font-family: 'Oswald', sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     letter-spacing: .02em;
     color: #daeaf2;
     line-height: 1.2em;
@@ -162,30 +162,44 @@ $$/       $$$$$$/   $$$$$$/     $$/    $$$$$$$$/ $$/   $$/
 }
 
 #ftc{
-  margin: 0 auto;
-	max-width: 1280px;
-  overflow: auto;
+   margin: 0 auto;
+	 max-width: 1280px;
+   overflow: auto;
+	//border: 1px solid yellow;
+	//height: 300px;
+	 margin-top: 3em;
+	 padding-bottom:3em;
+	 box-sizing: border-box;
 }
 
-#fcontenedor{
-  //border: 15px solid yellow;
-  margin: 5% auto;
-  width: 70%;
-  overflow: auto;
-}
 
 #ftc1 {
-		float: left;
-    margin: 50px;
+	float: left;
+	padding-right:  0.5%;
+	padding-left: 8%;
+	width:  33.33%;
+	box-sizing: border-box;
+    //border: 1px solid yellow;
+	overflow: auto;
+
 }
 
 #ftc2 {
-  float: left;
-  margin: 50px;
-
+    float: left;
+	padding-right:  5%;
+	padding-left: 9%;
+	width:  33.33%;
+	box-sizing: border-box;
+	//border: 1px solid yellow;
+	overflow: auto;
 }
 
 #ftc3 {
   float: left;
-  margin: 50px;
+	padding-right:  0.5%;
+	padding-left: 14%;
+	width:  33.33%;
+	box-sizing: border-box;
+	// border: 1px solid yellow;
+	overflow: auto;
 }
