@@ -10,14 +10,9 @@
     <div {% if site.style == 'dark' %}class="text-white"{% endif %}>
       {{ content }}
     </div>
-
     <div style="margin-top: -40px; //padding-top: 0px ">
           {% include galeria.html %}
     </div>
-
-
-
-
 
     <div class="my-6" >
       {% include projects.html %}
@@ -65,4 +60,4 @@
   </div>
 {% endif %}
 
-{% include footer.html %}
+{% include footer.html metadata=true %}

@@ -27,11 +27,12 @@ projects:
     forks: true
     projects:
     # - repo-name
+    - repo-HTML
 
-# social_media:
+social_media:
   # behance: your_username
   # dribbble: your_username
-  # facebook: your_username
+    facebook: millojsg
   # hackerrank: your_username
   # instagram: your_username
   # keybase: your_username
