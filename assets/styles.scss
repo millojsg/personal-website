@@ -122,15 +122,6 @@ $$ |     $$    $$/ $$    $$/    $$ |   $$       |$$ |  $$ |
 $$/       $$$$$$/   $$$$$$/     $$/    $$$$$$$$/ $$/   $$/
 ***********************************************************/
 
-#ft {
-    font-family: 'Raleway', sans-serif;
-    font-size: 1em;
-    line-height: 1.6em;
-	background: linear-gradient(to bottom, #485054 0, #333738 100%);
-	display: flex;
-	align-items: flex-end;
-	height: 100%;
-}
 
 #ftln {
     position: relative;
@@ -148,7 +139,10 @@ $$/       $$$$$$/   $$$$$$/     $$/    $$$$$$$$/ $$/   $$/
     letter-spacing: .02em;
     color: #daeaf2;
     line-height: 1.2em;
-    margin: .5em 0;
+	margin-top: 1em;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
 }
 
 #ft ul {
@@ -164,10 +158,18 @@ $$/       $$$$$$/   $$$$$$/     $$/    $$$$$$$$/ $$/   $$/
     border-bottom: 1px dotted #78868c
 }
 
+#ft {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+    line-height: 1.6em;
+	background: linear-gradient(to bottom, #485054 0, #333738 100%);
+	min-height: 50vh;
+}
+
 #ftc{
-   margin: 0 auto;
-	 max-width: 1280px;
-   	 overflow: auto;
+    margin: 0 auto;
+	max-width: 1280px;
+   	//overflow: visible;
 	//border: 1px solid yellow;
 	//height: 300px;
 	 margin-top: 3em;
@@ -177,32 +179,49 @@ $$/       $$$$$$/   $$$$$$/     $$/    $$$$$$$$/ $$/   $$/
 
 
 #ftc1 {
-	float: left;
+	//float: left;
 	padding-right:  0.5%;
-	padding-left: 8%;
-	width:  33.33%;
+	padding-left: 11%;
+	width: 420px;
 	box-sizing: border-box;
     //border: 1px solid yellow;
-	overflow: auto;
-
+	overflow: visible;
+	display: inline-block;
+	vertical-align: top; /*para que se alineen por el tope*/
 }
 
 #ftc2 {
-    float: left;
+    //float: left;
 	padding-right:  5%;
-	padding-left: 9%;
-	width:  33.33%;
+	padding-left: 11%;
+	width:  420px;
 	box-sizing: border-box;
 	//border: 1px solid yellow;
-	overflow: auto;
+	overflow: visible;
+	display: inline-block;
+	vertical-align: top; /*para que se alineen por el tope*/
 }
 
 #ftc3 {
-  float: left;
+    //float: left;
 	padding-right:  0.5%;
-	padding-left: 14%;
-	width:  33.33%;
+	padding-left: 11%;
+	width:   420px;
 	box-sizing: border-box;
 	// border: 1px solid yellow;
-	overflow: auto;
+	overflow: visible;
+	display: inline-block;
+	vertical-align: top; /*para que se alineen por el tope*/
 }
+
+
+.caja{
+	border: 1px solid #999;
+	color: #444;
+	padding: 1em;
+	margin: 0.5%;
+	box-sizing: border-box;
+	width: 31.9%;
+	display: inline-block;
+	vertical-align: top; /*para que se alineen por el tope*/
+	}
