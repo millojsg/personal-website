@@ -1,3 +1,5 @@
+---
+---
 @import url('https://unpkg.com/primer/build/build.css');
 @import 'highlight-syntax';
 
@@ -212,14 +214,3 @@ $$/       $$$$$$/   $$$$$$/     $$/    $$$$$$$$/ $$/   $$/
 	vertical-align: top; /*para que se alineen por el tope*/
 }
 
-
-.caja{
-	border: 1px solid #999;
-	color: #444;
-	padding: 1em;
-	margin: 0.5%;
-	box-sizing: border-box;
-	width: 31.9%;
-	display: inline-block;
-	vertical-align: top; /*para que se alineen por el tope*/
-	}
