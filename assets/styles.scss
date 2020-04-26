@@ -47,8 +47,14 @@ $$$$$$/  $$$$$$$$/ $$/   $$/ $$$$$$$$/ $$/   $$/ $$/   $$/ $$$$$$$$/ $$$$$$$$/  
   position: sticky;
   top: 0;
   width: 100%;
-	z-index:20;
+  z-index:20;
 }
+
+body{
+	min-height: calc();
+}
+
+
 
 /********************************************************************
  ______    ______   __        ________  _______   ______   ______
@@ -125,7 +131,7 @@ $$/       $$$$$$/   $$$$$$/     $$/    $$$$$$$$/ $$/   $$/
 
 #ftln {
     position: relative;
-    top: 2em;
+    top: 0.5em;
     height: 2em;
     background: rgba(255, 255, 255, 0.05)
 }
@@ -168,7 +174,9 @@ $$/       $$$$$$/   $$$$$$/     $$/    $$$$$$$$/ $$/   $$/
     font-size: 1em;
     line-height: 1.6em;
 	background: linear-gradient(to bottom, #485054 0, #333738 100%);
-	min-height: 50vh;
+	min-height: 20vh;
+	padding-bottom: 5vh;
+	align-self: flex-end;
 }
 
 #ftc{

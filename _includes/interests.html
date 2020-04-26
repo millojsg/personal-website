@@ -1,16 +1,16 @@
 <h2 {% if site.style == 'dark' %}class="text-white" {% endif %}>Mis Intereses</h2>
 <p class="f4 mb-4 {% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}">
-  Combinar las diferentes experiencias adquiridas para formarme como un profresional integral.</p>
+  Continuar adquiriendo experiencias en diferentes áreas para formarme como un profesional más integral.</p>
 
-<h3 {% if site.style == 'dark' %}class="text-white" {% endif %}>Experiencias</h2>
+<h3 {% if site.style == 'dark' %}class="text-white" {% endif %}>Experiencias</h3>
   <ul style="list-style: none;">
     <li>+3 años - MWD/LWD: Gamma | Resistividades | Perfiles: J, S, Verticales, Horizontales</li>
     <li>+4 años - Desarrollador: Visual Basic.net | C# | VBA | SQL | Stimulsoft </li>
   </ul>
 
+    <h3 {% if site.style == 'dark' %}class="text-white" {% endif %}  style= "padding-top: 2em;">Sitios utiles</h3>
+  <div class="d-flex flex-wrap gutter-condensed mb-4"" >
 
-
-  <div class="d-flex flex-wrap gutter-condensed mb-4" style= "padding-top: 3em;" >
     {% for topic in site.topics %}
     <div class="col-6 col-md-12 col-lg-6 col-xl-4 mb-3">
       {% include topic-card.html %}
