@@ -27,7 +27,9 @@ projects:
     forks: true
     projects:
     # - repo-name
-    - repo-HTML
+    - repo-HTML-CSS-JS
+    - repo-COMANDOS
+    - repo-CSHARP
 
 social_media:
   # behance: your_username
