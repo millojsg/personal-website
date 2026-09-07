@@ -1,5 +1,7 @@
 layout: stacked #sidebar # stacked #sidebar
 style: light #dark  #light
+url: "https://millojsg.github.io"
+baseurl: "/personal-website"
 
 plugins:
   - jekyll-octicons
@@ -27,45 +29,16 @@ projects:
     forks: true
     projects:
     # - repo-name
-    - repo-HTML-CSS-JS
-    - repo-COMANDOS
-    - repo-CSHARP
+    # - repo-HTML-CSS-JS
+    # - repo-COMANDOS
+    # - repo-CSHARP
 
 social_media:
-  # behance: your_username
-  # dribbble: your_username
     facebook: millojsg
-  # hackerrank: your_username
-  # instagram: your_username
-  # keybase: your_username
-  # linkedin: your_username
-  # mastodon: your_username
-  # medium: your_username
-  # stackoverflow: your_user_id
-  # telegram: your_username
     twitter: millojsg1
-  # unsplash: your_username
-  # vk: your_username
-  # website: http://your_website_url
-  # youtube: your_username
+
 
 topics:
-  - name: github
-    web_url: https://github.com/
-    image_url: https://github.githubassets.com/images/modules/logos_page/Octocat.png
-
-  - name: msdn
-    web_url: https://docs.microsoft.com/es-es/visualstudio/get-started/visual-basic/?view=vs-2019
-    image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/439px-Microsoft_logo.svg.png
-
-  - name: w3schools
-    web_url: https://www.w3schools.com/
-    image_url: https://lh3.googleusercontent.com/i-ij7KM2pFUUpFE31QAUDXg5mzGFNbm16S4tjmg2ZyuhCGLgNJ8oXJRbq7ysh6LoZg=s180-rw
-
-  - name: RigZone
-    web_url: https://www.rigzone.com/a-sql-jobs/?page=2
-    image_url: https://media-exp1.licdn.com/dms/image/C560BAQGgmY8xZU2GGg/company-logo_200_200/0?e=2159024400&v=beta&t=rYxxxIgoen5gia7kMwm9z2qWqB_2IMXsfZFghAxfe18
-
   - name: Luis Dueñas Blog
     web_url: http://lduenash.blogspot.com/
     image_url: https://steamuserimages-a.akamaihd.net/ugc/922541006440575185/25EBBFBD6D71F6A2C146D7C2E37EB7FC919184D5/

@@ -1,6 +1,6 @@
 # Get started building your personal website
 
-### Showcase your software development skills
+## Showcase your software development skills
 
 This repository gives you the code you'll need to kickstart a personal website that showcases your work as a software developer. And when you manage the code in a GitHub repository, it will automatically render a webpage with the owner's profile information, including a photo, bio, and repositories.
 
@@ -28,25 +28,32 @@ Jekyll is a [Ruby Gem](https://jekyllrb.com/docs/ruby-101/#gems) that can be ins
 
 1. Install a full [Ruby development environment](https://jekyllrb.com/docs/installation/)
 2. Install Jekyll and [bundler](https://jekyllrb.com/docs/ruby-101/#bundler) [gems](https://jekyllrb.com/docs/ruby-101/#gems)
-```
+
+```bash
 gem install jekyll bundler
 ```
+
 3. Change into your new directory
-```
+
+```bash
 cd personal-website
 ```
+
 4. Install missing gems
-```
+
+```bash
 bundle install
 ```
+
 5. Build the site and make it available on a local server
-```
+
+```bash
 bundle exec jekyll serve
 ```
 
 You should see something like:
 
-```
+```text
 Configuration file: /octocat/personal-website/_config.yml
             Source: /octocat/personal-website
        Destination: /octocat/_site
@@ -117,7 +124,7 @@ Your website supports linking and sharing to social media services you're using,
 1. Edit your repository's `_config.yml` file.
 2. Edit the `social_media` dictionary line, and represent the services you like in a simple `key: value` form:
 
-```
+```text
 social_media:
   behance: your_username
   dribbble: your_username  
@@ -153,7 +160,7 @@ To **add a page** to your website (e.g. detailed resume):
 2. Give it a filename that you want to be used in the page's URL (e.g. `http://yoursite.dev/filename`).
 3. At the start of your file, include the following [front matter](https://jekyllrb.com/docs/front-matter/):
 
-```
+```text
 ---
 layout: default
 ---
@@ -166,13 +173,13 @@ To **add a blog post** to your website:
 1. Create a new `.md` file in your repository's `/_posts/` directory.
 2. Give it a filename using the following format:
 
-```
+```text
 YEAR-MONTH-DAY-title.MARKUP
 ```
 
 3. At the start of your file, include the following [front matter](https://jekyllrb.com/docs/front-matter/):
 
-```
+```text
 ---
 title: "The title of my blog post"
 ---
@@ -212,14 +219,13 @@ Jekyll's convention for defining layouts is very flexible. You can [learn more a
 
 Your website is pre-configured to use [GitHub's very flexible CSS framework called "Primer,"](https://styleguide.github.com/primer/). It's currently referenced within your `styles.scss` file, using the CSS import at-rule:
 
-```
+```text
 @import url('https://unpkg.com/primer/build/build.css');
 ```
 
 You are, of course, welcome to remove it or replace it with another framework. Just bear in mind that the HTML that your website came pre-packaged with references multiple Primer "utility classes" to define things like column widths, margins, and background colors.
 
 You also have the option to add on to and extend Primer's styles by adding custom CSS to your `/assets/styles.scss` Sass stylesheet. By editing this file, you can customize your website's color scheme, typography, and more.
-
 
 ## License
 

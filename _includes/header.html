@@ -30,32 +30,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="{{ "/assets/styles.css" | relative_url }}" rel="stylesheet" type="text/css">
 
-<script>
-//Con este codigo logro crear que el elemento de id BLINK parpadee
-window.setInterval (BlinkIt,1000);
-var color = "black";
-function BlinkIt () {
-var blink = document.getElementById ("blink");
-color = (color == "#ffffff")? "black" : "#ffffff";
-blink.style.color = color;}
 </script>
 
-
-<script>
-//Con este codigo el header se mantendra
-window.onscroll = function() {myFunction()};
-
-var encabezado = document.getElementById("encabezado");
-var sticky = encabezado.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    encabezado.classList.add("sticky")
-  } else {
-    encabezado.classList.remove("sticky");
-  }
-}
-</script>
 
   </head>
   <body class="bg-white min-height-full" {% if site.style == 'dark' %}style="background-color: #2f363d !important"{% endif %}>
