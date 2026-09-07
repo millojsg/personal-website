@@ -1,3 +1,19 @@
-<header class="sticky" style="background-color: white; border-bottom: solid #3b5998b8 5px; margin-bottom: 5px;">
-    <img src="{{ '/assets/images/logo.jpg' | relative_url }}" alt="Ing. Emilio Sánchez" style="display: block; height: 100px; width: auto; max-width: 100%;"/>  
+<style>
+    #masthead {
+        position: sticky;
+        z-index: 20;
+        top: 0;
+        transform: translateY(-100px);
+        width: 100%;
+        background-color: white;
+        border-bottom: solid #3b5998b8 3px; 
+        height: 240px;
+        padding-top: 120px;       
+        padding-left: 20px;
+    }
+</style>
+
+<header id="masthead">
+    <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="Ing. Emilio Sánchez"
+        style="display: block; height: 100px; width: auto; max-width: 100%;" />
 </header>
